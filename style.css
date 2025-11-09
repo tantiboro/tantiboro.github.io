@@ -1,0 +1,240 @@
+/* style.css */
+
+/* --- Global Reset & Fonts --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* --- Main Container --- */
+.container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Header & Contact --- */
+header {
+    text-align: center;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: #212529;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    color: #007bff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 0.95rem;
+    color: #495057;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+/* --- General Section Styling --- */
+section {
+    margin-bottom: 2.5rem;
+}
+
+section h3 {
+    font-size: 1.6rem;
+    color: #212529;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
+/* --- Skills Section --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.skill-category h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill-category li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* --- Experience Section --- */
+.job {
+    margin-bottom: 1.5rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0.25rem;
+}
+
+.job h4 {
+    font-size: 1.3rem;
+    color: #007bff;
+    font-weight: 600;
+}
+
+.job-date {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #495057;
+    font-style: italic;
+}
+
+.job-company {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.job ul li {
+    margin-bottom: 0.75rem;
+}
+
+/* --- Education Section --- */
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.education-column h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.edu-item {
+    margin-bottom: 1rem;
+}
+
+.edu-item strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.edu-item p {
+    margin-bottom: 0;
+    font-style: italic;
+    color: #495057;
+}
+
+.education-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e9ecef;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header h2 {
+        font-size: 1.1rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+    }
+
+    .job-header {
+        flex-direction: column;
+    }
+    
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+}
